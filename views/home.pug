@@ -1,0 +1,57 @@
+extends base.pug
+
+block scripts
+  script(src='/static/script.js')
+
+block style 
+  style
+      include ../static/style.css
+
+block content
+  nav#navbar 
+      ul 
+         div#logo 
+             img(src="/static/logo1.png")
+             | SDA
+         li #[a(href="/") Home]
+         li #[a(href="/") About]
+         li #[a(href="/") Services]
+         li #[a(href="/") Class Info]
+         li #[a(href="/") Contact Us]
+         
+    section#introsection 
+      div Welcome to the best Dance academy of the world 
+      div.small Eat Sleep Dance Repeat  
+
+    section#ourmission 
+      h2 Our mission 
+      div.card 
+         h3 Dance The Way You Like 
+         div.card-box 
+             div.card-img 
+                img(src="/static/show1.jpg")
+             div.card-content 
+                p This is the best dance academy of the universe
+
+      div.card 
+         h3 Dance perfection  
+         div.card-box 
+             div.card-img 
+                img(src="/static/show2.png")
+             div.card-content 
+                p This is the best dance academy of the universe
+         
+      div.card 
+         h3 Expert teaching 
+         div.card-box 
+             div.card-img 
+                img(src="/static/show3.jpg")
+             div.card-content 
+                p This is the best dance academy of the universe
+    section#sponsorsection 
+      h2 Our sponsors 
+      div#sponsors 
+          img(src="/static/applelogo.jpg", alt="applelogo" class="splogo")
+          img(src="/static/microsoftlogo.png", alt="microsoftlogo" class="splogo")
+          img(src="/static/hplogo.png", alt="hplogo" class="splogo")
+          img(src="/static/skypelogo.png", alt="skypelogo" class="splogo")
